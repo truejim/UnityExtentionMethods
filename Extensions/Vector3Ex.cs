@@ -10,6 +10,10 @@ public static class Vector3Ex
 		return new Vector3(v.x, v.y, 0.0f);
 	}
 
+	public static Vector3 Vector2ToVector3ZeroY(this Vector2 v) {
+		return new Vector3(v.x, 0.0f, v.y);
+	}
+
 	public static Vector3 SetX(this Vector3 v, float x) {
 		return new Vector3(x, v.y, v.z);
 	}
